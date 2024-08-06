@@ -30,7 +30,7 @@ jobs:
         run: docker build -t discord-rpm .
 
       - name: Run dockerfile
-        run: docker run discord-rpm -v ./RPMs:/home/bot/RPMs
+        run: docker run -v ./RPMs:/home/bot/RPMs discord-rpm
 
       - name: Archive
         uses: actions/upload-artifact@v4
