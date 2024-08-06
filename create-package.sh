@@ -1,6 +1,7 @@
 #!/bin/bash
 # Author: TheElectronWill
 # This script downloads the latest version of Discord for linux, and creates a package with rpmbuild.
+#
 
 cd "$(dirname "$(readlink -f -- "$0")")"
 
