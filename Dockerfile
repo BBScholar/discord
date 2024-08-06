@@ -16,4 +16,5 @@ COPY common-functions.sh common-functions.sh
 COPY terminal-colors.sh terminal-colors.sh
 COPY create-package.sh create-package.sh
 
-CMD ["./create-package.sh"]
+RUN id
+ENTRYPOINT ["./create-package.sh"]
