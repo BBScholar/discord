@@ -36,4 +36,6 @@ jobs:
           echo test, and deploy your project.
       - name: Run file
         run: |
-          ./create_package.sh stable
+          ls
+          ls $GITHUB_WORKSPACE
+          ./create-package.sh stable
